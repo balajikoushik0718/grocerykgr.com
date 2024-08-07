@@ -795,4 +795,105 @@ section{
       }
       </style>
   
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="about-me-container">
+        <h1>About Me</h1>
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocIi4gaJ3vYzK6o3PP9xf9UcCqd_CQ37HX0nxOnV7ZwcDj4DkY4=s360-c-no" alt="Your Photo" class="profile-photo">
+        <p>DESIGNED BY BALAJI KOUSHIK S</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: hwb(0 2% 93%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-me-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-photo {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: hwb(0 2% 93%);
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: hwb(0 2% 93%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-me-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-photo {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: hwb(0 2% 93%);
+  }
+  
+  p {
+    color:  hwb(0 2% 93%);
+    line-height: 1.6;
+  }
+</style>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  const moreInfoButton = document.createElement('button');
+  moreInfoButton.textContent = 'Show More';
+  document.querySelector('.about-me-container').appendChild(moreInfoButton);
+
+  moreInfoButton.addEventListener('click', function() {
+      const moreInfo = document.createElement('p');
+      moreInfo.textContent = 'Here is some more information about me...';
+      document.querySelector('.about-me-container').appendChild(moreInfo);
+      moreInfoButton.style.display = 'none';
+  });
+});
+
+</script>
+  
 </html>
